@@ -1,0 +1,528 @@
+Archive member included because of file (symbol)
+
+c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./MCAL/MEXTI/MEXTI_prog.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+ptr_f0              0x2               ./MCAL/MEXTI/MEXTI_prog.o
+ptr_f2              0x2               ./MCAL/MEXTI/MEXTI_prog.o
+ptr_f1              0x2               ./MCAL/MEXTI/MEXTI_prog.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./MCAL/MTIMER2/MTIMER2_prog.o
+LOAD ./MCAL/MTIMER/MTIMER_prog.o
+LOAD ./MCAL/MGIE/MGIE_prog.o
+LOAD ./MCAL/MEXTI/MEXTI_prog.o
+LOAD ./MCAL/MDIO/MDIO_prog.o
+LOAD ./HAL/HPUSH_BUTTON/HPUSH_BUTTON_prog.o
+LOAD ./HAL/HLED/HLED_prog.o
+LOAD ./APP/APP_prog.o
+LOAD ./APP/main.o
+LOAD c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1326
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_6
+                0x00000078                __vector_11
+                0x00000078                __vector_13
+                0x00000078                __vector_17
+                0x00000078                __vector_19
+                0x00000078                __vector_7
+                0x00000078                __vector_5
+                0x00000078                __vector_4
+                0x00000078                __vector_9
+                0x00000078                __vector_15
+                0x00000078                __vector_8
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./MCAL/MTIMER2/MTIMER2_prog.o
+ .text          0x0000007c        0x0 ./MCAL/MTIMER/MTIMER_prog.o
+ .text          0x0000007c        0x0 ./MCAL/MGIE/MGIE_prog.o
+ .text          0x0000007c        0x0 ./MCAL/MEXTI/MEXTI_prog.o
+ .text          0x0000007c        0x0 ./MCAL/MDIO/MDIO_prog.o
+ .text          0x0000007c        0x0 ./HAL/HPUSH_BUTTON/HPUSH_BUTTON_prog.o
+ .text          0x0000007c        0x0 ./HAL/HLED/HLED_prog.o
+ .text          0x0000007c        0x0 ./APP/APP_prog.o
+ .text          0x0000007c        0x0 ./APP/main.o
+ .text          0x0000007c        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.MTIMER2_TIMER2_void_Init
+                0x0000007c       0x62 ./MCAL/MTIMER2/MTIMER2_prog.o
+                0x0000007c                MTIMER2_TIMER2_void_Init
+ .text.MTIMER2_void_Set_Preload_or_OCR2_Value
+                0x000000de       0x1c ./MCAL/MTIMER2/MTIMER2_prog.o
+                0x000000de                MTIMER2_void_Set_Preload_or_OCR2_Value
+ .text.MTIMER2_void_check_OVF_or_CTC_flag
+                0x000000fa       0x18 ./MCAL/MTIMER2/MTIMER2_prog.o
+                0x000000fa                MTIMER2_void_check_OVF_or_CTC_flag
+ .text.MTIMER2_void_clear_TOV2_or_OCF2
+                0x00000112       0x1c ./MCAL/MTIMER2/MTIMER2_prog.o
+                0x00000112                MTIMER2_void_clear_TOV2_or_OCF2
+ .text.MTIMER2_void_start_counting
+                0x0000012e       0x2a ./MCAL/MTIMER2/MTIMER2_prog.o
+                0x0000012e                MTIMER2_void_start_counting
+ .text.MTIMER2_void_stop_counting
+                0x00000158       0x1c ./MCAL/MTIMER2/MTIMER2_prog.o
+                0x00000158                MTIMER2_void_stop_counting
+ .text.MTIMER2_void_delay
+                0x00000174       0x24 ./MCAL/MTIMER2/MTIMER2_prog.o
+                0x00000174                MTIMER2_void_delay
+ .text.MTIMER_TIMER0_void_Init
+                0x00000198       0x62 ./MCAL/MTIMER/MTIMER_prog.o
+                0x00000198                MTIMER_TIMER0_void_Init
+ .text.MTIMER_void_Set_Preload_or_OCR0_Value
+                0x000001fa       0x1c ./MCAL/MTIMER/MTIMER_prog.o
+                0x000001fa                MTIMER_void_Set_Preload_or_OCR0_Value
+ .text.MTIMER_void_check_OVF_or_CTC_flag
+                0x00000216       0x22 ./MCAL/MTIMER/MTIMER_prog.o
+                0x00000216                MTIMER_void_check_OVF_or_CTC_flag
+ .text.MTIMER_void_clear_TOV0_or_OCF0
+                0x00000238       0x1c ./MCAL/MTIMER/MTIMER_prog.o
+                0x00000238                MTIMER_void_clear_TOV0_or_OCF0
+ .text.MTIMER_void_start_counting
+                0x00000254       0x2a ./MCAL/MTIMER/MTIMER_prog.o
+                0x00000254                MTIMER_void_start_counting
+ .text.MTIMER_void_stop_counting
+                0x0000027e       0x1c ./MCAL/MTIMER/MTIMER_prog.o
+                0x0000027e                MTIMER_void_stop_counting
+ .text.MTIMER_void_delay
+                0x0000029a       0x24 ./MCAL/MTIMER/MTIMER_prog.o
+                0x0000029a                MTIMER_void_delay
+ .text.MGIE_void_enable
+                0x000002be       0x1c ./MCAL/MGIE/MGIE_prog.o
+                0x000002be                MGIE_void_enable
+ .text.MGIE_void_disable
+                0x000002da       0x1c ./MCAL/MGIE/MGIE_prog.o
+                0x000002da                MGIE_void_disable
+ .text.MEXTI_void_enable
+                0x000002f6       0x3a ./MCAL/MEXTI/MEXTI_prog.o
+                0x000002f6                MEXTI_void_enable
+ .text.MEXTI_void_disable
+                0x00000330       0x3c ./MCAL/MEXTI/MEXTI_prog.o
+                0x00000330                MEXTI_void_disable
+ .text.MEXTI_void_intialization
+                0x0000036c      0x17a ./MCAL/MEXTI/MEXTI_prog.o
+                0x0000036c                MEXTI_void_intialization
+ .text.MEXTI_void_setCallBack_INT0
+                0x000004e6       0x24 ./MCAL/MEXTI/MEXTI_prog.o
+                0x000004e6                MEXTI_void_setCallBack_INT0
+ .text.MEXTI_void_setCallBack_INT1
+                0x0000050a       0x24 ./MCAL/MEXTI/MEXTI_prog.o
+                0x0000050a                MEXTI_void_setCallBack_INT1
+ .text.MEXTI_void_setCallBack_INT2
+                0x0000052e       0x24 ./MCAL/MEXTI/MEXTI_prog.o
+                0x0000052e                MEXTI_void_setCallBack_INT2
+ .text.__vector_1
+                0x00000552       0x5a ./MCAL/MEXTI/MEXTI_prog.o
+                0x00000552                __vector_1
+ .text.__vector_2
+                0x000005ac       0x5a ./MCAL/MEXTI/MEXTI_prog.o
+                0x000005ac                __vector_2
+ .text.__vector_3
+                0x00000606       0x5a ./MCAL/MEXTI/MEXTI_prog.o
+                0x00000606                __vector_3
+ .text.MDIO_void_setpin_value
+                0x00000660      0x200 ./MCAL/MDIO/MDIO_prog.o
+                0x00000660                MDIO_void_setpin_value
+ .text.MDIO_void_toggle_pin
+                0x00000860       0xfa ./MCAL/MDIO/MDIO_prog.o
+                0x00000860                MDIO_void_toggle_pin
+ .text.MDIO_void_setpin_direction
+                0x0000095a      0x200 ./MCAL/MDIO/MDIO_prog.o
+                0x0000095a                MDIO_void_setpin_direction
+ .text.MDIO_value_type_getpin_value
+                0x00000b5a       0xf2 ./MCAL/MDIO/MDIO_prog.o
+                0x00000b5a                MDIO_value_type_getpin_value
+ .text.MDIO_void_setport_value
+                0x00000c4c       0x82 ./MCAL/MDIO/MDIO_prog.o
+                0x00000c4c                MDIO_void_setport_value
+ .text.MDIO_void_setport_direction
+                0x00000cce       0xf0 ./MCAL/MDIO/MDIO_prog.o
+                0x00000cce                MDIO_void_setport_direction
+ .text.HPUSH_BUTTON_void_init
+                0x00000dbe       0x2c ./HAL/HPUSH_BUTTON/HPUSH_BUTTON_prog.o
+                0x00000dbe                HPUSH_BUTTON_void_init
+ .text.HPUSH_BUTTON_void_read
+                0x00000dea       0x20 ./HAL/HPUSH_BUTTON/HPUSH_BUTTON_prog.o
+                0x00000dea                HPUSH_BUTTON_void_read
+ .text.HLED_void_enable
+                0x00000e0a       0x4a ./HAL/HLED/HLED_prog.o
+                0x00000e0a                HLED_void_enable
+ .text.HLED_void_switch_on
+                0x00000e54       0x22 ./HAL/HLED/HLED_prog.o
+                0x00000e54                HLED_void_switch_on
+ .text.HLED_void_switch_off
+                0x00000e76       0x22 ./HAL/HLED/HLED_prog.o
+                0x00000e76                HLED_void_switch_off
+ .text.HLED_void_toggle
+                0x00000e98       0x20 ./HAL/HLED/HLED_prog.o
+                0x00000e98                HLED_void_toggle
+ .text.pattern  0x00000eb8       0x14 ./APP/APP_prog.o
+                0x00000eb8                pattern
+ .text.APP_void_init
+                0x00000ecc       0x38 ./APP/APP_prog.o
+                0x00000ecc                APP_void_init
+ .text.APP_void_start
+                0x00000f04      0x40c ./APP/APP_prog.o
+                0x00000f04                APP_void_start
+ .text.main     0x00001310       0x12 ./APP/main.o
+                0x00001310                main
+ .text.libgcc   0x00001322        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001322        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00001322                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001322        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00001322                exit
+                0x00001322                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001322        0x4 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001326                _etext = .
+
+.data           0x00800060        0x0 load address 0x00001326
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./MCAL/MTIMER2/MTIMER2_prog.o
+ .data          0x00800060        0x0 ./MCAL/MTIMER/MTIMER_prog.o
+ .data          0x00800060        0x0 ./MCAL/MGIE/MGIE_prog.o
+ .data          0x00800060        0x0 ./MCAL/MEXTI/MEXTI_prog.o
+ .data          0x00800060        0x0 ./MCAL/MDIO/MDIO_prog.o
+ .data          0x00800060        0x0 ./HAL/HPUSH_BUTTON/HPUSH_BUTTON_prog.o
+ .data          0x00800060        0x0 ./HAL/HLED/HLED_prog.o
+ .data          0x00800060        0x0 ./APP/APP_prog.o
+ .data          0x00800060        0x0 ./APP/main.o
+ .data          0x00800060        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060        0xa
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800060        0x0 ./MCAL/MTIMER2/MTIMER2_prog.o
+ .bss           0x00800060        0x0 ./MCAL/MTIMER/MTIMER_prog.o
+ .bss           0x00800060        0x0 ./MCAL/MGIE/MGIE_prog.o
+ .bss           0x00800060        0x0 ./MCAL/MEXTI/MEXTI_prog.o
+ .bss           0x00800060        0x0 ./MCAL/MDIO/MDIO_prog.o
+ .bss           0x00800060        0x0 ./HAL/HPUSH_BUTTON/HPUSH_BUTTON_prog.o
+ .bss           0x00800060        0x0 ./HAL/HLED/HLED_prog.o
+ .bss           0x00800060        0x0 ./APP/APP_prog.o
+ .bss           0x00800060        0x0 ./APP/main.o
+ .bss           0x00800060        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 c:/users/eslam/desktop/nti_coding/nti_module2/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.ped_mode  0x00800060        0x1 ./APP/APP_prog.o
+                0x00800060                ped_mode
+ .bss.flag_to_begin
+                0x00800061        0x1 ./APP/APP_prog.o
+                0x00800061                flag_to_begin
+ .bss.Vech_stop_or_GetReadyTo_move
+                0x00800062        0x1 ./APP/APP_prog.o
+                0x00800062                Vech_stop_or_GetReadyTo_move
+ .bss.Vech_move_or_GetReadyTo_stop
+                0x00800063        0x1 ./APP/APP_prog.o
+                0x00800063                Vech_move_or_GetReadyTo_stop
+ *(COMMON)
+ COMMON         0x00800064        0x6 ./MCAL/MEXTI/MEXTI_prog.o
+                0x00800064                ptr_f0
+                0x00800066                ptr_f2
+                0x00800068                ptr_f1
+                0x0080006a                PROVIDE (__bss_end, .)
+                0x00001326                __data_load_start = LOADADDR (.data)
+                0x00001326                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080006a        0x0
+                0x0080006a                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080006a                PROVIDE (__noinit_end, .)
+                0x0080006a                _end = .
+                0x0080006a                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x2400
+ *(.stab)
+ .stab          0x00000000      0x33c ./MCAL/MTIMER2/MTIMER2_prog.o
+ .stab          0x0000033c      0x330 ./MCAL/MTIMER/MTIMER_prog.o
+                                0x33c (size before relaxing)
+ .stab          0x0000066c      0x1bc ./MCAL/MGIE/MGIE_prog.o
+                                0x1c8 (size before relaxing)
+ .stab          0x00000828      0x4ec ./MCAL/MEXTI/MEXTI_prog.o
+                                0x4f8 (size before relaxing)
+ .stab          0x00000d14      0x5e8 ./MCAL/MDIO/MDIO_prog.o
+                                0x5f4 (size before relaxing)
+ .stab          0x000012fc      0x270 ./HAL/HPUSH_BUTTON/HPUSH_BUTTON_prog.o
+                                0x27c (size before relaxing)
+ .stab          0x0000156c      0x318 ./HAL/HLED/HLED_prog.o
+                                0x324 (size before relaxing)
+ .stab          0x00001884      0xa74 ./APP/APP_prog.o
+                                0xa80 (size before relaxing)
+ .stab          0x000022f8      0x108 ./APP/main.o
+                                0x114 (size before relaxing)
+
+.stabstr        0x00000000      0xd06
+ *(.stabstr)
+ .stabstr       0x00000000      0xd06 ./MCAL/MTIMER2/MTIMER2_prog.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(XY_project.elf elf32-avr)
+LOAD linker stubs
